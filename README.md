@@ -1,37 +1,21 @@
-# React Learning:
-1. Open terminal and go to Desktop:
+# App component Setup:
+  # 🌾 Kiruba's Farm React App
+
+### 👩‍💻 Code Example (App.jsx)
+```jsx
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      <h1>Welcome to Kiruba's Farm 🌾</h1>
+    </div>
+  )
+}
+
+export default App
 ```
-   cd Desktop
-```
-2. Create a new React project using Vite:
-```
-   npm create vite@latest
-```
-3. Enter your project name:
-*  Example:
-   
-```
-   ✔ Project name: my-react-app
-```
-4. Select framework and variant:
-```
-   ✔ Select a framework: › React
-   ✔ Select a variant: › JavaScript
-```
-5. Go into your project folder:
-```   
-   cd my-react-app
-```
-6. Install dependencies:
-```
-   npm install
-```
-7. Open the project in VS Code:
-```
-   code .
-```
-8. Start the development server:
-```
-   npm run dev
-```
-9. Clear the App.jsx and clear all css files then start our project.   
+---
+
+### 🖼️ Example Output
+ ![App output](./appout.png)
