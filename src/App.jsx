@@ -18,7 +18,7 @@ const App = () => {
       {/* passing full object-eg5*/}
       <ul>
       {crops.map((crop, index)=>(
-        <Welcome key={index} data={crop} />
+        <Welcome key={index} data={crop} onPress={()=>{alert('you harvested ' + crop.name +"-" + crop.harvest)}}/>
       ))}
       </ul>
     </div>
