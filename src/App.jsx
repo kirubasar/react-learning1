@@ -3,19 +3,22 @@ import Welcome from './Welcome'
 // functional component & resuable component eg
 
 const App = () => {
-  const crops = ["Corn", "Wheat", "Rice", "Millets"];
-  // use handleClick function
-  const handleClick=(val)=>{
-    alert('you selected ' + val);
-  }
+  const crops = [
+    { name: "Corn", harvest: "90 days" },
+    { name: "Wheat", harvest: "120 days" },
+    { name: "Rice", harvest: "150 days" },
+    { name: "Millets", harvest: "80 days" }
+  ];
+  
+  
   
   return (
     <div>
       <h2>Welcome kiruba's Farm</h2>
-      {/* Event handling using map and resuable component eg4- passing crop as prop not item because it is inside map*/}
+      {/* passing full object-eg5*/}
       <ul>
       {crops.map((crop, index)=>(
-        <Welcome key={index} item={crop} onPress={handleClick} id={index+1}/>
+        <Welcome key={index} data={crop} />
       ))}
       </ul>
     </div>
