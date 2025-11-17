@@ -2,8 +2,9 @@ import React from 'react'
 // functional component and resuable component eg:
 const Welcome =({item}) =>{
   return (
-    <div> 
-    <li>{item} is growing in the field</li>
+    <div> <ul>
+    <li>{item} is opening for admission now and it has full placement support</li>
+    </ul>
     </div>
   )
 }

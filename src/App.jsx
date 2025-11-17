@@ -1,16 +1,15 @@
 import React from 'react'
 import Welcome from './Welcome'
-// functional component & resuable component 
+// functional component & resuable component aca
 
 const App = () => {
-  const names =['Corn', 'Wheat', 'Rice', 'Millets'];
+  const course =["Java","Python","JavaScript","C++"];
   return (
     <div>
-      <h2>Welcome kiruba's Farm</h2>
-      <ul>
-      {names.map((val,index)=>(
+      <h2>Welcome kiruba's Academy</h2>
+      {course.map((val,index)=>(
        <Welcome  key={index} item={val}/>))}
-      </ul>
+      
     </div>
   )
 }
