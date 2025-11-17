@@ -1,10 +1,12 @@
 import React from 'react'
 // functional component and resuable component eg:
-const Welcome =({item}) =>{
+const Welcome =({item, id}) =>{
   return (
-    <div> <ul>
-    <li>{item} is opening for admission now and it has full placement support</li>
-    </ul>
+    <div> 
+    {/* not using ul here because ul is used in App.jsx that is correct way*/}
+    <h3>The order{id} of crop based on Ratings</h3>
+    <li> Rating:{id}-Name: {item}</li>
+        
     </div>
   )
 }
