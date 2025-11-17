@@ -1,13 +1,16 @@
 import React from 'react'
 import Welcome from './Welcome'
 // functional component & resuable component 
+
 const App = () => {
+  const names =['Corn', 'Wheat', 'Rice', 'Millets'];
   return (
     <div>
       <h2>Welcome kiruba's Farm</h2>
-      <Welcome name="Tomato"/>
-      <Welcome name="Cabbage"/>
-      <Welcome name="Carrot"/>
+      <ul>
+      {names.map((val,index)=>(
+       <Welcome  key={index} item={val}/>))}
+      </ul>
     </div>
   )
 }
