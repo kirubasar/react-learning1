@@ -1,8 +1,10 @@
 import React from 'react'
-
-const Welcome = () => {
+// functional component and resuable component eg:
+const Welcome =(props) =>{
   return (
-    <div> <h2>Welcome kiruba's Farm</h2></div>
+    <div> 
+    <p>{props.name} is growing in the field</p>
+    </div>
   )
 }
 
