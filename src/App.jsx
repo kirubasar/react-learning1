@@ -4,6 +4,10 @@ import Welcome from './Welcome'
 
 const App = () => {
   const crops = ["Corn", "Wheat", "Rice", "Millets"];
+  // use handleClick function
+  const handleClick=(val)=>{
+    alert('you selected ' + val);
+  }
   
   return (
     <div>
@@ -11,7 +15,7 @@ const App = () => {
       {/* Event handling using map and resuable component eg4- passing crop as prop not item because it is inside map*/}
       <ul>
       {crops.map((crop, index)=>(
-        <Welcome key={index} item={crop} onPress={()=>alert('you selected ' + crop)} id={index+1}/>
+        <Welcome key={index} item={crop} onPress={handleClick} id={index+1}/>
       ))}
       </ul>
     </div>
