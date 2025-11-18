@@ -1,26 +1,25 @@
 import React from 'react'
 import Welcome from './Welcome'
+import './App.css'
 // functional component & resuable component eg
 
 const App = () => {
   const crops = [
-    { name: "Corn", harvest: "90 days" },
-    { name: "Wheat", harvest: "120 days" },
-    { name: "Rice", harvest: "150 days" },
-    { name: "Millets", harvest: "80 days" }
+    { name: "Corn", category: "Grain" },
+    { name: "Tomato", category: "Vegetable" },
+    { name: "Mango", category: "Fruit" },
   ];
   
   
   
   return (
-    <div>
-      <h2>Welcome kiruba's Farm</h2>
-      {/* passing full object-eg5*/}
-      <ul>
+    <div className="cards">
+      {/* Rendering cards using .map()-eg6*/}
+      
       {crops.map((crop, index)=>(
-        <Welcome key={index} data={crop} onPress={()=>{alert('you harvested ' + crop.name +"-" + crop.harvest)}}/>
+        <Welcome key={index} data={crop}/>
       ))}
-      </ul>
+      
     </div>
   )
 }
