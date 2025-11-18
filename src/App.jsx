@@ -17,7 +17,7 @@ const App = () => {
       {/* Rendering cards using .map()-eg6*/}
       
       {crops.map((crop, index)=>(
-        <Welcome key={index} data={crop}/>
+        <Welcome key={index} data={crop} onPress={()=>alert(`The ${crop.name} Category is `  +  crop.category)} />
       ))}
       
     </div>
